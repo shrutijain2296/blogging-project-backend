@@ -19,6 +19,9 @@ app.use(cors({
 }));
 
 // routes
+app.get("/", (req, res) => {
+    res.send("ok")
+})
 app.use("/user", userRoutes);
 // localhost:3001/user/register
 app.use("/blog", blogRoutes);
